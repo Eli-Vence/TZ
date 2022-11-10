@@ -962,8 +962,12 @@ p a {
     max-width: 300px
 }
 
+.bottom-link:link , .bottom-link:visited{
+  color: white;
+}
+
 .bottom-link:hover {
-    color: #fff
+  color: rgb(222, 191, 191)
 }
 
 @media (max-width: 500px) {
