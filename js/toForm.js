@@ -1,5 +1,5 @@
 const form = document.querySelector('.order_form');
-const links = document.querySelectorAll('li');
+const links = document.querySelectorAll('a');
 const bottom = document.querySelector('.bottom-link');
 links.forEach((el) =>
   el.addEventListener('click', () => {

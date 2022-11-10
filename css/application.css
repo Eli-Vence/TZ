@@ -21955,3 +21955,49 @@ a.show-more.cat-business{
   height: 22px;
   margin-top: 70px;
 }
+
+.burger{
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.burger-line{
+  border: white 1xp solid;
+  background: white;
+  width: 32px;
+  height: 4px;
+}
+
+.burger-line:not(:last-child){
+  margin-bottom: 4px;
+}
+
+@media (max-width:716px) {
+  .header-tiempo{
+    display: none;
+  }
+}
+
+@media (max-width:600px) {
+  .redes-social-header{
+    display: none;
+  }
+
+  .current-date{
+    display: none;
+  }
+  .form{
+    width: 300px;
+  }
+  .search{
+    width: 200px;
+  }
+  
+  .burger{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 40px;
+    cursor: pointer;
+  }
+}
