@@ -260,8 +260,8 @@ ul.share-buttons img{
   font-size:15px
 }
 .header-desktop #header-branding{
-  height:140px !important;
-  border-top:5px solid #32363E !important;
+  height:140px;
+  border-top:0px solid #32363E !important;
   border-bottom:1px solid #32363E !important;
   background:#32363E !important
 }
@@ -540,103 +540,7 @@ ul.share-buttons img{
 .sidebar-nav .dropdown-menu>li>a{
   color:#909090
 }
-.hamburger{
-  position:fixed;
-  top:20px;
-  z-index:9999;
-  display:block;
-  width:32px;
-  height:32px;
-  margin-left:15px;
-  background:transparent;
-  border:none
-}
-.hamburger:hover,.hamburger:focus,.hamburger:active{
-  outline:none
-}
-.hamburger.is-closed:before{
-  content:'';
-  display:block;
-  width:100px;
-  font-size:14px;
-  color:#fff;
-  line-height:32px;
-  text-align:center;
-  opacity:0;
-  transform:translate3d(0, 0, 0);
-  transition:all .35s ease-in-out;
-}
-.hamburger.is-closed:hover:before{
-  opacity:1;
-  display:block;
-  transform:translate3d(-100px, 0, 0);
-  transition:all .35s ease-in-out
-}
-.hamburger.is-closed .hamb-top,.hamburger.is-closed .hamb-middle,.hamburger.is-closed .hamb-bottom,.hamburger.is-open .hamb-top,.hamburger.is-open .hamb-middle,.hamburger.is-open .hamb-bottom{
-  position:absolute;
-  left:0;
-  height:4px;
-  width:100%
-}
-.hamburger.is-closed .hamb-top,.hamburger.is-closed .hamb-middle,.hamburger.is-closed .hamb-bottom{
-  background-color:#fff
-}
-.hamburger.is-closed .hamb-top{
-  top:5px;
-  transition:all .35s ease-in-out
-}
-.hamburger.is-closed .hamb-middle{
-  top:50%;
-  margin-top:-2px
-}
-.hamburger.is-closed .hamb-bottom{
-  bottom:5px;
-  transition:all .35s ease-in-out
-}
-.hamburger.is-closed:hover .hamb-top{
-  top:0;
-  transition:all .35s ease-in-out
-}
-.hamburger.is-closed:hover .hamb-bottom{
-  bottom:0;
-  transition:all .35s ease-in-out
-}
-.hamburger.is-open .hamb-top,.hamburger.is-open .hamb-middle,.hamburger.is-open .hamb-bottom{
-  background-color:#fff
-}
-.hamburger.is-open .hamb-top,.hamburger.is-open .hamb-bottom{
-  top:50%;
-  margin-top:-2px
-}
-.hamburger.is-open .hamb-top{
-  transform:rotate(45deg);
-  transition:transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08)
-}
-.hamburger.is-open .hamb-middle{
-  display:none
-}
-.hamburger.is-open .hamb-bottom{
-  transform:rotate(-45deg);
-  transition:transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08)
-}
-.hamburger.is-open:before{
-  content:'';
-  display:block;
-  width:100px;
-  font-size:14px;
-  color:#fff;
-  line-height:32px;
-  text-align:center;
-  opacity:0;
-  transform:translate3d(0, 0, 0);
-  transition:all .35s ease-in-out
-}
-.hamburger.is-open:hover:before{
-  opacity:1;
-  display:block;
-  transform:translate3d(-100px, 0, 0);
-  transition:all .35s ease-in-out
-}
+
 .hemeroteca{
   display:block;
   overflow:hidden
@@ -1183,8 +1087,8 @@ ul.share-buttons img{
 }
 
 .theme-light #page-header #header-branding{
-  background:#fff !important;
-  border-top:5px solid #fff !important;
+  background:#32363e !important;
+  border-top:0px solid #fff !important;
   border-bottom:1px solid #fff !important
 }
 .theme-light #page-header #header-branding div.weather-theme-light{
@@ -1203,7 +1107,7 @@ ul.share-buttons img{
   display:none !important
 }
 .theme-light #page-header #header-branding .current-date,.theme-light #page-header #header-branding .current-date-puente{
-  color:#2E323A !important
+  color:#ffffff !important
 }
 .theme-light #page-header #header-branding .cd-location{
   color:#2E323A !important
@@ -19808,7 +19712,7 @@ ul.rating li.li-rated{
 #header-branding{
   position:relative;
   height:100px;
-  border-top:5px solid #3a3a3a;
+  border-top:0px solid #3a3a3a;
   border-bottom:1px solid #4d4d4d;
   overflow:hidden
 }
@@ -21977,6 +21881,15 @@ a.show-more.cat-business{
   .header-tiempo{
     display: none;
   }
+  .header-desktop #header-branding{
+    height: 100px;
+  }
+  .burger{
+    margin-top: 40px;
+  }
+  .form{
+    margin-top: 15px;
+  }
 }
 
 @media (max-width:600px) {
@@ -21996,8 +21909,15 @@ a.show-more.cat-business{
   
   .burger{
     display: flex;
-    margin-top: 50px;
     margin-left: 40px;
     cursor: pointer;
   }
+}
+
+.header-desktop{
+  background-color: #5c5c5c;
+}
+
+#header-branding{
+  background-color: #5c5c5c;
 }
